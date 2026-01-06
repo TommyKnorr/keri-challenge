@@ -53,6 +53,22 @@ network calls are made.
 
 ## Requirements
 
+### System Dependencies
+
+KERI relies on native cryptographic libraries provided by **libsodium 1.0.18+**
+(via the `pysodium` Python package).
+
+On some systems—particularly clean Windows environments—`libsodium`
+may need to be present for installation to succeed.
+
+Most Linux and macOS environments provide this dependency automatically.
+
+This project does not include installation instructions for system-level
+dependencies.
+
+
+---
+
 ### Python
 - **Recommended:** Python **3.12**
 - **Tested locally:** Python **3.13.6**
@@ -62,6 +78,8 @@ However, KERI depends on native cryptographic libraries (`pysodium` /
 `libsodium`), which currently have the most reliable wheel support on Python
 3.12. Python 3.13 works when those dependencies are available (as in local
 development).
+
+
 
 ### Dependencies
 See [`requirements.txt`](requirements.txt).
